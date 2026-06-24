@@ -18,13 +18,16 @@ import {
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "XXXX",
-  appId: "XXXX"
+  apiKey: "AIzaSyAv4o0N7o1rSFYtTnol_onGvG2RYRkX_zk",
+  authDomain: "my-awesome-project-fb327.firebaseapp.com",
+  databaseURL: "https://my-awesome-project-fb327-default-rtdb.firebaseio.com",
+  projectId: "my-awesome-project-fb327",
+  storageBucket: "my-awesome-project-fb327.firebasestorage.app",
+  messagingSenderId: "337685312074",
+  appId: "1:337685312074:web:6426786a28051bd0572cb3",
+  measurementId: "G-X11LSS7TJG"
 };
 
 const app = initializeApp(firebaseConfig);
