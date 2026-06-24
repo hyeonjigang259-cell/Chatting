@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2>ROOMS</h2>
+
+    <button onclick="switchRoom('general')"># general</button>
+    <button onclick="switchRoom('study')"># study</button>
+    <button onclick="switchRoom('random')"># random</button>
+
+    <div class="userBox">
+      <button onclick="login()">Google 로그인</button>
+      <div id="userInfo"></div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="topBar">
+      <div id="roomTitle"># general</div>
+    </div>
+
+    <div class="notice">
+      📢 <span id="noticeText">공지 없음</span>
+    </div>
+
+    <div id="chatBox"></div>
+
+    <div class="inputBar">
+      <input id="message" placeholder="메시지 입력..." />
+      <button onclick="sendMessage()">전송</button>
+    </div>
+
+    <div class="adminBar">
+      <input id="noticeInput" placeholder="공지 (관리자)" />
+      <button onclick="setNotice()">공지 등록</button>
+    </div>
+
+  </main>
+
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
